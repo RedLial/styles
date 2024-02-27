@@ -3,36 +3,36 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <div id="text">这是我的网站!</div>
+    <div id = square>Spin Spun blung Spin Spun blung Spin Spun blung Spin Spun blung Spin Spun blung Spin Spun blung Spin Spun blung </div>
     <style>
-      #text {
-        font-size: 90px;
-        font-weight: bold;
-        color: rgb(125, 242, 255);
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: black;
-        text-align: left;
-        position: fixed;
-        top: 30px;
-        left: 0px;
-        transform: rotate(45deg);
-        transform-origin: top left;
-        letter-spacing: 2px;
-        font-family: 'Arial', sans-serif;
-        text-transform: uppercase;
-        animation: pulse 2s infinite alternate;
-      }
-
-@keyframes pulse {
-  from {
-    transform: scale(1) rotate(-5deg);
-  }
-  to {
-    transform: scale(1.1) rotate(-5deg);
-  }
+body {
+  padding: 50px; 
 }
 
-      
+#square {
+  font-size:17px;
+  color:white;
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  margin: auto;
+  margin-top:20%;
+  width: 50%;
+  padding: 10px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
       
     </style>
   </body>
